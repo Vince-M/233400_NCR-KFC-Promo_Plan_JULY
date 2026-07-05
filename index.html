@@ -105,10 +105,17 @@
           border: 1px solid #005cab !important;
           text-decoration: none !important;
         }
-
         .content {
           line-height: 20px;
           font-size: 16px;
+        }
+        ul.offerItems li {
+          font-size: 16px;
+          line-height: 18px;
+        }
+        .offerItems li.limited {
+          font-size: 18px;
+          line-height: 20px;
         }
         .footer {
           background-color: #005cab;
@@ -202,8 +209,34 @@
 
         @media screen and (max-width: 599.98px) {
 
+          h1 {
+            font-size: 44px !important;
+            line-height: 44px !important;
+          }
+
+          h2.dine  {
+            font-size: 32px !important;
+            line-height: 32px !important;
+          }
+
+          h2.price {
+            font-size: 80px !important;
+            line-height: 80px !important;
+          }
+
           h3 {
             margin: 24px 0 0 !important;
+          }
+          .column-wrapper.price {
+            padding: 0 !important;
+          }
+          .offerItems li {
+            font-size: 14px !important;
+            line-height: 14px !important;
+          }
+          .offerItems li.limited {
+            font-size: 16px !important;
+            line-height: 18px !important;
           }
           .intro h1 {
             font-size: 48px !important;
@@ -383,8 +416,8 @@
                     <table class="column column-one-half" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin: 0;" role="presentation">
                       <tr>
                         <td style="text-align: center; padding: 24px 0 0 24px; font-size: 0;">
-                          <h1 style="font-family: Inter, Helvetica, Arial, sans-serif; font-size: 88px; font-weight: 900; line-height: 62px; color: #2d2d2d; text-transform: uppercase;">2 Can</h1>
-                          <h2 style="font-family: Inter, Helvetica, Arial, sans-serif; font-size: 58px; font-weight: 900; line-height: 58px; color: #2d2d2d;  text-transform: uppercase;">Dine For</h2>
+                          <h1 class="2Can" style="font-family: Inter, Helvetica, Arial, sans-serif; font-size: 88px; font-weight: 900; line-height: 62px; color: #2d2d2d; text-transform: uppercase;">2 Can</h1>
+                          <h2 class="dine" style="font-family: Inter, Helvetica, Arial, sans-serif; font-size: 58px; font-weight: 900; line-height: 58px; color: #2d2d2d;  text-transform: uppercase;">Dine For</h2>
                         </td>
                       </tr>
                     </table>
@@ -401,7 +434,7 @@
                           <table class="column" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
 
                             <tr>
-                              <td class="flyerProduct" style="text-align: center; padding-right: 24px; vertical-align: top;  font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                              <td class="flyerProduct" style="text-align: center; vertical-align: top;  font-family: Helvetica, Arial, sans-serif; width: 100%;">
                                 <img class="branding" src="img/KFC-brand-red-500x152.png" alt="KFC branding" title="KFC" width="250" border="0" style="width: 100%; max-width: 250px;">
                               </td>
                             </tr>
@@ -425,7 +458,7 @@
 
                 <!-- PRICE, OFFER & IMAGE START -->
                 <tr>
-                  <td class="column-wrapper" style="padding: 0; font-size: 0; text-align: left;">
+                  <td class="column-wrapper price" style="padding: 0; font-size: 0; text-align: left;">
 
                     <!--[if mso]>
                       <table width="600" align="center" style="border-spacing: 0;" role="presentation">
@@ -437,7 +470,7 @@
 
                       <tr>
                         <td style="text-align: center; padding: 0 0 0 24px; font-size: 0;">
-                          <h2 class="price" style="font-family: Impact, Helvetica, Arial, sans-serif; font-size: 112px; font-weight: 900; line-height: 112px; color: #e30018;  text-transform: uppercase;"><sup style="font-size: 60px">$</sup>46<sup style="font-size: 60px">99</sup></h2>
+                          <h2 class="price" style="font-family: Impact, Helvetica, Arial, sans-serif; font-size: 120px; font-weight: 900; line-height: 120px; letter-spacing: 1.5px; color: #e30018;  text-transform: uppercase;"><sup style="font-size: 60px">$</sup>46<sup style="font-size: 60px">99</sup></h2>
                         </td>
                       </tr>
                       <tr>
@@ -447,7 +480,7 @@
                             <li>1 Large Popcorn Chicken</li>
                             <li>1 Large Fries</li>
                             <li>6 Dips</li>
-                            <li style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; color: #2d2d2d;">LIMITED TIME OFFER*</li>
+                            <li class="limited" style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; color: #2d2d2d;">LIMITED TIME OFFER*</li>
                           </ul>
                         </td>
                       </tr>
